@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 *,
 ::before,
 ::after {
@@ -22,13 +24,81 @@
 
 .row {
   display: flex;
+  flex-wrap: wrap;
+  margin-top: -8px;
   margin-right: -8px;
   margin-left: -8px;
+
+  & > * {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding: 0 8px;
+    margin-top: 8px;
+  }
 }
 
 .col {
-  padding: 0 8px;
   flex: 1;
+}
+
+.color-input {
+  display: flex;
+  align-items: center;
+
+  input[type='color'] {
+    margin-right: 16px;
+    width: 45px;
+    height: 45px;
+    -webkit-appearance: none;
+    border: none;
+  }
+
+  input[type='color']::-webkit-color-swatch-wrapper {
+    padding: 0;
+  }
+
+  input[type='color']::-webkit-color-swatch {
+    border: none;
+  }
+
+  &__title {
+    margin-bottom: 4px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #202223;
+  }
+
+  &__color {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #6d7175;
+  }
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05), 0px 1px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  background: #ffffff;
+
+  &__icon {
+    width: 74px;
+    height: 74px;
+    background: #f5f6f8;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .input {

@@ -1,0 +1,90 @@
+@import '../../index.scss';
+
+.loyalty-program {
+  &__title {
+    margin-bottom: 8px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #202223;
+    &-how-to-earn {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__description {
+    margin-bottom: 16px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #6d7175;
+  }
+
+  .col {
+    max-width: 352px;
+    width: 100%;
+    flex: 0 0 auto;
+  }
+
+  .input {
+    margin-bottom: 20px;
+  }
+
+  .card {
+    display: flex;
+    align-items: center;
+
+    &__icon {
+      margin-right: 20px;
+      font-family: 'SF Pro Text';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 28px;
+      line-height: 33px;
+      color: #202223;
+    }
+
+    &__title {
+      margin-bottom: 8px;
+      font-family: 'SF Pro Text';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 24px;
+      color: #202223;
+    }
+
+    &__description {
+      font-family: 'SF Pro Text';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      color: #202223;
+      opacity: 0.7;
+    }
+
+    &__action-buttons {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: flex;
+
+      span {
+        display: inline-flex;
+      }
+
+      span:first-child {
+        margin-right: 8px;
+      }
+
+      svg {
+        vertical-align: middle;
+      }
+    }
+  }
+}
