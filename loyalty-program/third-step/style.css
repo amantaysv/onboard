@@ -199,6 +199,8 @@
 
 .textfield {
   display: block;
+}
+.textfield.textfield-block {
   padding: 12px 20px;
 }
 .textfield__title {
@@ -225,14 +227,14 @@
   letter-spacing: 0.01em;
   border-radius: 5px;
 }
-.button-close {
+.button-outlined {
   background-color: transparent;
   border: 1px solid #202223;
   font-weight: 400;
   color: #202223;
   margin-right: 12px;
 }
-.button-save {
+.button-contained {
   font-weight: 500;
   color: #ffffff;
   border: 1px solid #202223;

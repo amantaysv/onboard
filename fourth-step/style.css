@@ -199,8 +199,6 @@
 
 .textfield {
   display: block;
-}
-.textfield.textfield-block {
   padding: 12px 20px;
 }
 .textfield__title {
@@ -227,16 +225,71 @@
   letter-spacing: 0.01em;
   border-radius: 5px;
 }
-.button-outlined {
+.button-close {
   background-color: transparent;
   border: 1px solid #202223;
   font-weight: 400;
   color: #202223;
   margin-right: 12px;
 }
-.button-contained {
+.button-save {
   font-weight: 500;
   color: #ffffff;
   border: 1px solid #202223;
   background-color: #202223;
-}/*# sourceMappingURL=index.css.map */
+}
+
+.loyalty-program-final-step .card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.loyalty-program-final-step .card:last-child {
+  margin-bottom: 0;
+}
+.loyalty-program-final-step .card__icon {
+  margin-right: 20px;
+  font-family: "SF Pro Text";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 33px;
+  color: #202223;
+}
+.loyalty-program-final-step .card__title {
+  margin-bottom: 8px;
+  font-family: "SF Pro Text";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #202223;
+}
+.loyalty-program-final-step .card__description {
+  font-family: "SF Pro Text";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #0b1e47;
+  opacity: 0.7;
+}
+.loyalty-program-final-step .card__description a {
+  color: inherit;
+}
+.loyalty-program-final-step .card__action-buttons {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+}
+.loyalty-program-final-step .card__action-buttons span {
+  display: inline-flex;
+  cursor: pointer;
+}
+.loyalty-program-final-step .card__action-buttons span:first-child {
+  margin-right: 8px;
+}
+.loyalty-program-final-step .card__action-buttons svg {
+  vertical-align: middle;
+}/*# sourceMappingURL=style.css.map */

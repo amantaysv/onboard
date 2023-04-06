@@ -216,7 +216,10 @@
 
 .textfield {
   display: block;
-  padding: 12px 20px;
+
+  &.textfield-block {
+    padding: 12px 20px;
+  }
 
   &__title {
     margin-bottom: 12px;
@@ -243,14 +246,15 @@
   letter-spacing: 0.01em;
   border-radius: 5px;
 
-  &-close {
+  &-outlined {
     background-color: transparent;
     border: 1px solid #202223;
     font-weight: 400;
     color: #202223;
     margin-right: 12px;
   }
-  &-save {
+
+  &-contained {
     font-weight: 500;
     color: #ffffff;
     border: 1px solid #202223;
