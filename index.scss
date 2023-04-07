@@ -261,3 +261,52 @@
     background-color: #202223;
   }
 }
+
+.checked {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  border: 1px solid #377e62;
+  display: none;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+    width: 24px;
+    height: 24px;
+    background-color: #377e62;
+    border-radius: 50%;
+  }
+  &__icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-1px, 5px) rotate(225deg);
+    z-index: 1;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 2px;
+      height: 12px;
+      background-color: #fff;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 8px;
+      height: 2px;
+      background-color: #fff;
+    }
+  }
+}

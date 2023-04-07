@@ -1,34 +1,13 @@
-let colorPicker
-const defaultColor = '#0b1e47'
+const widgets = document.querySelectorAll('.reviews .widget')
 
-window.addEventListener('load', startup, false)
-function startup() {
-  colorPicker = document.querySelector('#color-picker')
-  colorPicker.value = defaultColor
-  colorPicker.addEventListener('input', updateFirst, false)
-  colorPicker.select()
+for (const widget of widgets) {
+  widget.addEventListener('click', () => {
+    document.body.style = widget.getAttribute('style')
+    clearActiveClasses()
+    widget.classList.toggle('active')
+  })
 }
 
-function updateFirst(event) {
-  const p = document.querySelector('.color-input__color')
-  if (p) {
-    p.textContent = event.target.value
-  }
+function clearActiveClasses() {
+  widgets.forEach((widget) => widget.classList.remove('active'))
 }
-
-const newActionModal = document.querySelector('.modal.modal-new-action')
-const addNewAction = document.querySelector('.add-new-action')
-const closeButtonNewActionModal = document.querySelector('.modal-new-action .button-close')
-const closeNewActionModal = document.querySelector('.modal-new-action .close-icon')
-
-addNewAction.addEventListener('click', () => {
-  newActionModal.classList.add('active')
-})
-
-closeButtonNewActionModal.addEventListener('click', () => {
-  newActionModal.classList.remove('active')
-})
-
-closeNewActionModal.addEventListener('click', () => {
-  newActionModal.classList.remove('active')
-})
