@@ -30,4 +30,22 @@
       color: #116bf2;
     }
   }
+
+  .widget {
+    max-width: 229px;
+    &__wrapper {
+      background: #f5f6f8;
+      border-radius: 20px;
+      padding: 20px;
+      margin-bottom: 10px;
+    }
+    &__description {
+      font-family: 'SF Pro Text';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+      color: #202223;
+    }
+  }
 }
