@@ -1,25 +1,18 @@
-@import '../../index.scss';
+@import '../index.scss';
 
-.main {
+.main-first-step {
   .card {
-    &.active {
-      .checked {
-        display: block;
-      }
-    }
     &.card-features {
       display: flex;
       .card__icon {
         margin-right: 20px;
       }
     }
-
     &.card-level {
       .card__icon {
         margin-bottom: 20px;
       }
     }
-
     &.card-launch {
       height: 100%;
       .card__icon {
@@ -28,22 +21,11 @@
     }
 
     &__title {
-      margin-bottom: 8px;
-      font-family: 'SF Pro Text';
-      font-style: normal;
       font-weight: 600;
       font-size: 16px;
-      line-height: 24px;
-      color: #202223;
     }
     &__description {
-      font-family: 'SF Pro Text';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 20px;
       color: #0b1e47;
-      opacity: 0.7;
     }
   }
 }

@@ -1,0 +1,10 @@
+@import '../../index.scss';
+
+.wishlist {
+  .textfield-radio:first-child {
+    margin-right: 20px;
+  }
+  &__tabs-title {
+    margin-bottom: 16px;
+  }
+}

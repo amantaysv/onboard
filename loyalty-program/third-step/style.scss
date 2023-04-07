@@ -3,12 +3,13 @@
 .loyalty-program {
   &__title {
     margin-bottom: 8px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
-    color: #202223;
+
+    &-how-to-earn {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__textfield {
     &-how-to-earn {
       margin-bottom: 20px;
     }
@@ -30,10 +31,6 @@
     flex: 0 0 auto;
   }
 
-  .input {
-    margin-bottom: 20px;
-  }
-
   .card {
     display: flex;
     align-items: center;
@@ -49,23 +46,12 @@
     }
 
     &__title {
-      margin-bottom: 8px;
-      font-family: 'SF Pro Text';
-      font-style: normal;
       font-weight: 400;
       font-size: 17px;
-      line-height: 24px;
-      color: #202223;
     }
 
     &__description {
-      font-family: 'SF Pro Text';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 20px;
       color: #202223;
-      opacity: 0.7;
     }
 
     &__action-buttons {

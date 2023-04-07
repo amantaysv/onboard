@@ -4,17 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>step 4</title>
+    <title>wishlist step 3</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <div class="container">
       <header class="header">
         <div class="header__text">
-          <h1 class="title-1 header__title">Final step 👋</h1>
+          <h1 class="title-1 header__title">Wishlist 👋</h1>
           <p class="title-2">
-            To earn points and post reviews using the Growave app, you need to have an enabled
-            customer account. Here are the instructions to enable accounts on your shop:
+            Having a wishlist feature on your shop can help create a positive shopping experience
+            for your customers, increase the likelihood of return visits, and ultimately drive more
+            sales.
           </p>
         </div>
         <span class="header__logo">
@@ -76,44 +77,49 @@
         </span>
       </header>
       <div class="divider"></div>
-      <main class="main final-step">
-        <div class="card">
-          <div class="card__icon">1</div>
-          <div>
-            <h3 class="card__title">Go</h3>
-            <p class="card__description">
-              From your Shopify admin, go to Settings > <a href="">Customer accounts.</a>
-            </p>
-          </div>
+      <main class="main wishlist">
+        <label class="textfield-checkbox">
+          <input type="checkbox" />
+          <p class="title-3">Notify customers about products in wishlists</p>
+          <a href="">Show preview</a>
+        </label>
+        <label class="textfield-checkbox">
+          <input type="checkbox" />
+          <p class="title-3">Show wishlist tab</p>
+        </label>
+        <h3 class="title-3 wishlist__tabs-title">Tab position</h3>
+        <div>
+          <label class="textfield-radio">
+            <input type="radio" class="input-radio" name="tab-position" checked />
+            <span class="title-3">Left</span>
+          </label>
+          <label class="textfield-radio">
+            <input type="radio" class="input-radio" name="tab-position" />
+            <span class="title-3">Right</span>
+          </label>
         </div>
-        <div class="card">
-          <div class="card__icon">2</div>
-          <div>
-            <h3 class="card__title">Edit</h3>
-            <p class="card__description">
-              In the Accounts in online store and checkout section, click Edit.
-            </p>
+        <div class="divider"></div>
+        <label class="textfield textfield-color">
+          <h2 class="title-3 textfield__title">Heart color</h2>
+          <p class="subtitle-1 textfield__subtitle">
+            Select color to better reflect your brand's voice
+          </p>
+          <div class="textfield-color-picker">
+            <input type="color" id="color-picker" />
+            <div>
+              <h3 class="title-3 textfield-color-picker__title">Primary color</h3>
+              <p class="subtitle-1" id="color-picker-value">#0b1e47</p>
+            </div>
           </div>
-        </div>
-        <div class="card">
-          <div class="card__icon">3</div>
-          <div>
-            <h3 class="card__title">Enable</h3>
-            <p class="card__description">
-              In the Login experience section, enable checkbox and select Classic customer accounts
-            </p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card__icon">4</div>
-          <div>
-            <h3 class="card__title">Save</h3>
-            <p class="card__description">Click Save</p>
-          </div>
-        </div>
+        </label>
+        <div class="divider"></div>
+        <h3 class="title-3 main__title">Select widgets you want to add on your shop</h3>
+        <label class="textfield-checkbox">
+          <input type="checkbox" />
+          <p class="title-3">Wishlist button on product page</p>
+        </label>
       </main>
     </div>
-
-    <script src="main.js"></script>
+    <script src="./main.js"></script>
   </body>
 </html>

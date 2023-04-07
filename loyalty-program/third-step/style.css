@@ -7,6 +7,61 @@
   box-sizing: border-box;
 }
 
+.title-1 {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+  color: #202223;
+}
+
+.title-2 {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #202223;
+}
+
+.title-3 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #202223;
+}
+
+.title-4 {
+  font-family: "SF Pro Text";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #202223;
+}
+
+.subtitle-1 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #6d7175;
+}
+
+.description {
+  font-family: "SF Pro Text";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #0b1e47;
+  opacity: 0.7;
+}
+
 .container {
   max-width: 1024px;
   margin-left: auto;
@@ -40,41 +95,6 @@
   flex: 1;
 }
 
-.color-input {
-  display: flex;
-  align-items: center;
-}
-.color-input input[type=color] {
-  margin-right: 16px;
-  width: 45px;
-  height: 45px;
-  -webkit-appearance: none;
-  border: none;
-}
-.color-input input[type=color]::-webkit-color-swatch-wrapper {
-  padding: 0;
-}
-.color-input input[type=color]::-webkit-color-swatch {
-  border: none;
-}
-.color-input__title {
-  margin-bottom: 4px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
-  color: #202223;
-}
-.color-input__color {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
-  color: #6d7175;
-}
-
 .card {
   position: relative;
   width: 100%;
@@ -91,6 +111,24 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.card__title {
+  margin-bottom: 8px;
+  font-family: "SF Pro Text";
+  font-style: normal;
+  line-height: 24px;
+  color: #202223;
+}
+.card__description {
+  font-family: "SF Pro Text";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  opacity: 0.7;
+}
+.card.active .checked {
+  display: block;
 }
 
 .input {
@@ -134,14 +172,6 @@
   padding: 16px 20px;
   box-shadow: inset 0px -1px 0px #e1e3e5;
 }
-.modal__header h2 {
-  font-family: "SF Pro Display";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
-  color: #202223;
-}
 .modal__header .close-icon {
   cursor: pointer;
 }
@@ -171,46 +201,74 @@
 }
 .header__title {
   margin-bottom: 16px;
-  font-family: "SF Pro Display";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 32px;
-  line-height: 38px;
-  color: #202223;
-}
-.header__description {
-  font-family: "SF Pro Display";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
-  color: #202223;
 }
 
-.main__description {
+.main__title {
   margin-bottom: 20px;
-  font-family: "SF Pro Display";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
-  color: #202223;
 }
 
 .textfield {
   display: block;
 }
+.textfield__title {
+  margin-bottom: 16px;
+}
+.textfield__title-modal {
+  margin-bottom: 12px;
+}
+.textfield__subtitle {
+  margin-top: -8px;
+  margin-bottom: 16px;
+}
 .textfield.textfield-block {
   padding: 12px 20px;
 }
-.textfield__title {
-  margin-bottom: 12px;
-  font-family: "SF Pro Display";
+.textfield.textfield-checkbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.textfield.textfield-checkbox input {
+  margin-right: 16px;
+}
+.textfield.textfield-checkbox p {
+  margin-right: 16px;
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 18px;
+  line-height: 21px;
   color: #202223;
+}
+.textfield.textfield-checkbox a {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration-line: underline;
+  color: #116bf2;
+}
+
+.textfield-color-picker {
+  display: flex;
+  align-items: center;
+}
+.textfield-color-picker input[type=color] {
+  margin-right: 16px;
+  width: 45px;
+  height: 45px;
+  -webkit-appearance: none;
+  border: none;
+}
+.textfield-color-picker input[type=color]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+.textfield-color-picker input[type=color]::-webkit-color-swatch {
+  border: none;
+}
+.textfield-color-picker__title {
+  margin-bottom: 4px;
 }
 
 .button {
@@ -290,14 +348,11 @@
 
 .loyalty-program__title {
   margin-bottom: 8px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
-  color: #202223;
 }
 .loyalty-program__title-how-to-earn {
+  margin-bottom: 20px;
+}
+.loyalty-program__textfield-how-to-earn {
   margin-bottom: 20px;
 }
 .loyalty-program__description {
@@ -314,9 +369,6 @@
   width: 100%;
   flex: 0 0 auto;
 }
-.loyalty-program .input {
-  margin-bottom: 20px;
-}
 .loyalty-program .card {
   display: flex;
   align-items: center;
@@ -331,22 +383,11 @@
   color: #202223;
 }
 .loyalty-program .card__title {
-  margin-bottom: 8px;
-  font-family: "SF Pro Text";
-  font-style: normal;
   font-weight: 400;
   font-size: 17px;
-  line-height: 24px;
-  color: #202223;
 }
 .loyalty-program .card__description {
-  font-family: "SF Pro Text";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
   color: #202223;
-  opacity: 0.7;
 }
 .loyalty-program .card__action-buttons {
   position: absolute;

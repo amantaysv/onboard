@@ -1,6 +1,6 @@
-@import '../../index.scss';
+@import '../index.scss';
 
-.loyalty-program-final-step {
+.final-step {
   .card {
     display: flex;
     align-items: center;
@@ -21,23 +21,12 @@
     }
 
     &__title {
-      margin-bottom: 8px;
-      font-family: 'SF Pro Text';
-      font-style: normal;
       font-weight: 600;
       font-size: 20px;
-      line-height: 24px;
-      color: #202223;
     }
 
     &__description {
-      font-family: 'SF Pro Text';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 20px;
       color: #0b1e47;
-      opacity: 0.7;
 
       a {
         color: inherit;
