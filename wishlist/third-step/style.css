@@ -393,28 +393,56 @@
   position: absolute;
   top: 0;
   right: 0;
-  transform: translate(-1px, 5px) rotate(225deg);
   z-index: 1;
+  transform: translate(50%, -50%);
+  width: 24px;
+  height: 24px;
 }
 .checked__icon::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
+  bottom: 6px;
+  right: 13px;
   width: 2px;
   height: 12px;
   background-color: #fff;
+  transform: rotate(45deg);
+  transform-origin: bottom right;
   border-radius: 10px;
 }
 .checked__icon::after {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
+  bottom: 6px;
+  right: 13px;
   width: 8px;
   height: 2px;
   background-color: #fff;
+  transform: rotate(45deg);
+  transform-origin: bottom right;
   border-radius: 10px;
+}
+
+.widget {
+  max-width: 229px;
+  position: relative;
+}
+.widget__wrapper {
+  background: #f5f6f8;
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+.widget__description {
+  font-family: "SF Pro Text";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #202223;
+}
+.widget.active .checked {
+  display: block;
 }
 
 .wishlist .textfield-radio:first-child {
