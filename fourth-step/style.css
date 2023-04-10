@@ -63,9 +63,15 @@
 }
 
 .container {
+  display: flex;
+}
+.container .left {
+  max-width: 672px;
+  padding: 32px;
+}
+.container .right {
   max-width: 1024px;
-  margin-left: auto;
-  padding: 56px;
+  padding: 32px;
 }
 
 .divider {
@@ -223,32 +229,6 @@
 .textfield.textfield-block {
   padding: 12px 20px;
 }
-.textfield.textfield-checkbox {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-}
-.textfield.textfield-checkbox input {
-  margin-right: 16px;
-}
-.textfield.textfield-checkbox p {
-  margin-right: 16px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
-  color: #202223;
-}
-.textfield.textfield-checkbox a {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-  text-decoration-line: underline;
-  color: #116bf2;
-}
 
 .textfield-color-picker {
   display: flex;
@@ -269,6 +249,101 @@
 }
 .textfield-color-picker__title {
   margin-bottom: 4px;
+}
+
+.textfield-checkbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.textfield-checkbox input[type=checkbox] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  background-color: #fff;
+  margin: 0;
+  margin-right: 16px;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #8c9196;
+  border-radius: 4px;
+  position: relative;
+}
+.textfield-checkbox input[type=checkbox]::before {
+  content: "";
+  position: absolute;
+  bottom: 3px;
+  right: 9px;
+  width: 2px;
+  height: 12px;
+  background-color: #fff;
+  transform: rotate(45deg);
+  transform-origin: bottom right;
+  border-radius: 10px;
+}
+.textfield-checkbox input[type=checkbox]::after {
+  content: "";
+  position: absolute;
+  bottom: 3px;
+  right: 9px;
+  width: 8px;
+  height: 2px;
+  background-color: #fff;
+  transform: rotate(45deg);
+  transform-origin: bottom right;
+  border-radius: 10px;
+}
+.textfield-checkbox input[type=checkbox]:checked {
+  border-color: #377e62;
+  background-color: #377e62;
+}
+.textfield-checkbox p {
+  margin-right: 16px;
+}
+.textfield-checkbox a {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration-line: underline;
+  color: #116bf2;
+}
+
+.textfield-radio {
+  display: inline-flex;
+  align-items: center;
+}
+.textfield-radio input[type=radio] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  position: relative;
+  background-color: #fff;
+  margin: 0;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #8c9196;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+.textfield-radio input[type=radio]::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em #2c6ecb;
+}
+.textfield-radio input[type=radio]:checked {
+  border-color: #2c6ecb;
+}
+.textfield-radio input[type=radio]:checked::before {
+  transform: translate(-50%, -50%) scale(1);
 }
 
 .button {
@@ -324,26 +399,56 @@
   position: absolute;
   top: 0;
   right: 0;
-  transform: translate(-1px, 5px) rotate(225deg);
   z-index: 1;
+  transform: translate(50%, -50%);
+  width: 24px;
+  height: 24px;
 }
 .checked__icon::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
+  bottom: 6px;
+  right: 13px;
   width: 2px;
   height: 12px;
   background-color: #fff;
+  transform: rotate(45deg);
+  transform-origin: bottom right;
+  border-radius: 10px;
 }
 .checked__icon::after {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
+  bottom: 6px;
+  right: 13px;
   width: 8px;
   height: 2px;
   background-color: #fff;
+  transform: rotate(45deg);
+  transform-origin: bottom right;
+  border-radius: 10px;
+}
+
+.widget {
+  max-width: 229px;
+  position: relative;
+}
+.widget__wrapper {
+  background: #f5f6f8;
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+.widget__description {
+  font-family: "SF Pro Text";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #202223;
+}
+.widget.active .checked {
+  display: block;
 }
 
 .final-step .card {

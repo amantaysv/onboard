@@ -63,9 +63,15 @@
 }
 
 .container {
+  display: flex;
+}
+.container .left {
+  max-width: 672px;
+  padding: 32px;
+}
+.container .right {
   max-width: 1024px;
-  margin-left: auto;
-  padding: 56px;
+  padding: 32px;
 }
 
 .divider {

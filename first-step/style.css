@@ -63,9 +63,127 @@
 }
 
 .container {
+  display: flex;
+  padding: 32px;
+  gap: 56px;
+}
+.container .left {
+  position: relative;
+  max-width: 672px;
+  width: 100%;
+  overflow: hidden;
+  padding: 20px;
+  background: #f6f6f7;
+  border-radius: 20px;
+}
+.container .right {
   max-width: 1024px;
-  margin-left: auto;
-  padding: 56px;
+  width: 100%;
+}
+
+.circle-1 {
+  position: absolute;
+  top: 218px;
+  right: 11px;
+  width: 148px;
+  height: 148px;
+  border: 1px solid #202223;
+  border-radius: 50%;
+  transform: translate(50%, -50%);
+  opacity: 0.3;
+}
+.circle-2 {
+  position: absolute;
+  top: 218px;
+  right: 11px;
+  width: 304px;
+  height: 304px;
+  border: 1px solid #202223;
+  border-radius: 50%;
+  transform: translate(50%, -50%);
+  opacity: 0.3;
+}
+.circle-3 {
+  position: absolute;
+  top: 218px;
+  right: 11px;
+  width: 486px;
+  height: 486px;
+  border: 1px solid #202223;
+  border-radius: 50%;
+  transform: translate(50%, -50%);
+  opacity: 0.3;
+}
+.circle-4 {
+  position: absolute;
+  top: 218px;
+  right: 11px;
+  width: 725px;
+  height: 725px;
+  border: 1px solid #202223;
+  border-radius: 50%;
+  transform: translate(50%, -50%);
+  opacity: 0.3;
+}
+
+.logo {
+  position: relative;
+  width: 100%;
+  height: 455px;
+  margin-bottom: 83px;
+}
+.logo__block {
+  position: absolute;
+  background-color: #fff;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo__block-wide {
+  width: 243px;
+  height: 60px;
+}
+.logo__block-square {
+  width: 60px;
+  height: 60px;
+}
+.logo__block-small {
+  width: 72px;
+  height: 62px;
+}
+.logo__block:nth-child(1) {
+  top: 32px;
+  right: 50%;
+  transform: translate(50%);
+}
+.logo__block:nth-child(2) {
+  top: 47px;
+  right: 57px;
+}
+.logo__block:nth-child(3) {
+  top: 124px;
+  right: 114px;
+}
+.logo__block:nth-child(4) {
+  top: 127px;
+  right: -8px;
+}
+.logo__block:nth-child(5) {
+  top: 216px;
+  right: 280px;
+}
+.logo__block:nth-child(6) {
+  top: 224px;
+  right: -27px;
+}
+.logo__block:nth-child(7) {
+  top: 308px;
+  right: 161px;
+}
+.logo__block:nth-child(8) {
+  top: 395px;
+  right: 26px;
 }
 
 .divider {
@@ -98,10 +216,16 @@
 .card {
   position: relative;
   width: 100%;
+  height: 100%;
   padding: 20px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05), 0px 1px 2px rgba(0, 0, 0, 0.15);
   border-radius: 8px;
   background: #ffffff;
+}
+.card-big {
+  padding: 32px;
+  box-shadow: none;
+  height: auto;
 }
 .card__icon {
   width: 74px;
@@ -423,25 +547,84 @@
   border-radius: 10px;
 }
 
-.main-first-step .card.card-features {
+.widget {
+  max-width: 229px;
+  position: relative;
+}
+.widget__wrapper {
+  background: #f5f6f8;
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+.widget__description {
+  font-family: "SF Pro Text";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #202223;
+}
+.widget.active .checked {
+  display: block;
+}
+
+.first-step .left .card:last-of-type {
+  margin-top: 12px;
+}
+.first-step .left .join-block {
+  display: flex;
+  align-items: center;
+}
+.first-step .left .join-block .icon {
+  margin-left: 17px;
+}
+.first-step .card .head {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.first-step .card .head .avatar {
+  width: 88px;
+  height: 88px;
+  background: #dcdcdc;
+  border-radius: 50%;
+  margin-right: 20px;
+  overflow: hidden;
+}
+.first-step .card .head .name {
+  font-family: SF Pro Display;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0px;
+}
+.first-step .card .head .position {
+  font-family: SF Pro Display;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+}
+.first-step .card.card-features {
   display: flex;
 }
-.main-first-step .card.card-features .card__icon {
+.first-step .card.card-features .card__icon {
   margin-right: 20px;
 }
-.main-first-step .card.card-level .card__icon {
+.first-step .card.card-level .card__icon {
   margin-bottom: 20px;
 }
-.main-first-step .card.card-launch {
+.first-step .card.card-launch {
   height: 100%;
 }
-.main-first-step .card.card-launch .card__icon {
+.first-step .card.card-launch .card__icon {
   margin-bottom: 20px;
 }
-.main-first-step .card__title {
+.first-step .card__title {
   font-weight: 600;
   font-size: 16px;
 }
-.main-first-step .card__description {
+.first-step .card__description {
   color: #0b1e47;
 }/*# sourceMappingURL=style.css.map */
