@@ -134,56 +134,49 @@
 }
 .logo__block {
   position: absolute;
+  width: 200px;
+  height: 50px;
   background-color: #fff;
   border-radius: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.logo__block-wide {
-  width: 243px;
-  height: 60px;
-}
-.logo__block-square {
-  width: 60px;
-  height: 60px;
-}
-.logo__block-small {
-  width: 72px;
-  height: 62px;
-}
 .logo__block:nth-child(1) {
   top: 32px;
-  right: 50%;
-  transform: translate(50%);
+  right: 208px;
 }
 .logo__block:nth-child(2) {
-  top: 47px;
-  right: 57px;
+  top: 121px;
+  right: 307px;
 }
 .logo__block:nth-child(3) {
-  top: 124px;
-  right: 114px;
+  top: 100px;
+  right: 57px;
 }
 .logo__block:nth-child(4) {
-  top: 127px;
-  right: -8px;
+  top: 210px;
+  right: 347px;
 }
 .logo__block:nth-child(5) {
-  top: 216px;
-  right: 280px;
+  top: 190px;
+  right: 110px;
 }
 .logo__block:nth-child(6) {
-  top: 224px;
-  right: -27px;
+  top: 300px;
+  right: 320px;
 }
 .logo__block:nth-child(7) {
-  top: 308px;
-  right: 161px;
+  top: 280px;
+  right: 74px;
 }
 .logo__block:nth-child(8) {
-  top: 395px;
-  right: 26px;
+  top: 389px;
+  right: 269px;
+}
+.logo__block:nth-child(9) {
+  top: 370px;
+  right: 32px;
 }
 
 .divider {

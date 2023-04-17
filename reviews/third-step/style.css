@@ -134,23 +134,13 @@
 }
 .logo__block {
   position: absolute;
+  width: 200px;
+  height: 50px;
   background-color: #fff;
   border-radius: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.logo__block-wide {
-  width: 243px;
-  height: 60px;
-}
-.logo__block-square {
-  width: 60px;
-  height: 60px;
-}
-.logo__block-small {
-  width: 72px;
-  height: 62px;
 }
 .logo__block:nth-child(1) {
   top: 32px;
