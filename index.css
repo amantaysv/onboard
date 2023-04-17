@@ -52,6 +52,15 @@
   color: #6d7175;
 }
 
+.subtitle-2 {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #0b1e47;
+}
+
 .description {
   font-family: "SF Pro Text";
   font-style: normal;
