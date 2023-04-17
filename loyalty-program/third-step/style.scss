@@ -2,6 +2,15 @@
 
 .loyalty-program {
   .left {
+    padding-bottom: 113px;
+    height: fit-content;
+    .preview-block {
+      position: relative;
+      padding: 32px;
+      background: #ffffff;
+      border-radius: 20px;
+      margin-bottom: 114px;
+    }
     .widget-preview {
       position: relative;
       width: 360px;
@@ -10,6 +19,7 @@
       box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05), 0px 1px 2px rgba(0, 0, 0, 0.15);
       border-radius: 8px;
       overflow: hidden;
+      margin: 0 auto;
       &__container {
         padding: 52px 16px 0;
       }
